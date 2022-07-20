@@ -1,32 +1,47 @@
 *,
 *::before,
-*::after{
+*::after {
     box-sizing: border-box;
 }
 
-body{
+body {
     margin: 0;
-    font-family: 'Noto Sans JP',sans-serif;
+    font-family: 'Noto Sans JP', sans-serif;
 }
 
-img{
+img {
     max-width: 100%;
     height: auto;
     display: block;
-    
+
 }
 
-h1,h2,h3,p{
+h1,
+h2,
+h3,
+p {
     margin: 0;
 }
 
-.container{
+.container {
     width: 85%;
     max-width: 65em;
     margin: 0 auto;
 }
 
-.btn{
+.split {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2em;
+    flex-basis: 30%;
+    min-width: 15rem;
+
+
+
+}
+
+
+.btn {
     display: inline-block;
     text-decoration: none;
     padding: .5em 1.25em;
@@ -37,5 +52,61 @@ h1,h2,h3,p{
     font-size: 1.125rem;
     font-size: medium;
     border-radius: .25em;
+
+}
+
+.btn:hover,
+.btn:focus {
+    transform: scale(1.1);
+    opacity: .7;
+}
+
+.head-text {
+    font-size: 4rem;
+    font-size: clamp(3rem, calc(5vw+1rem), 4.5rem);
+    line-height: 1.1;
+    text-transform: uppercase;
+}
+
+.section-title {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    font-size: clamp(2, 5rem, calc(5vw+1rem), 4rem);
+    line-height: 1;
+    color: #17353d;
+    font-size: xx-large;
+    padding-bottom: 5%;
+
+}
+
+section {
+    padding: 7em 0;
+}
+
+.head {
+    color: black;
+    text-align: center;
+    padding: 15em 0;
+    background-image: url(/landingImages/shopee.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+}
+
+.spacing>*+* {
+    margin-top: var(--spacer, 2rem);
+}
+
+.featured__item {
+    width: 300px;
+    border-radius: 150px;
+    background: #eee;
+    display: block;
+    position: relative;
+    transform: scale(.85);
+    transition: transform 250ms ease-in-out;
+    transform: rotate(-45deg);
+    margin: 30%;
+
 
 }
