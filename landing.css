@@ -98,15 +98,13 @@ section {
 }
 
 .featured__item {
-    width: 300px;
-    border-radius: 150px;
-    background: #eee;
+    width: 200px;
+    background: red;
     display: block;
     position: relative;
     transform: scale(.85);
     transition: transform 250ms ease-in-out;
     transform: rotate(-45deg);
     margin: 30%;
-
 
 }
